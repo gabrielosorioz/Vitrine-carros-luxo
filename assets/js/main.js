@@ -116,3 +116,24 @@ window.addEventListener('scroll', scrollActive)
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: 'top',
+  distance: '60px',
+  duration: 2500,
+  delay: 400,
+  // reset: true
+})
+
+sr.reveal(`.home__title, .popular__container, .features__img, featured__filters`)
+sr.reveal(`.home__subtitle`,{delay: 500})
+sr.reveal(`.home__elec`,{delay: 600})
+sr.reveal(`.home__img`,{delay: 800})
+sr.reveal(`.home__car-data`,{delay: 900,interval:100, origin: 'bottom'})
+sr.reveal(`.home__button`,{delay: 1000,interval:100, origin: 'bottom'})
+sr.reveal(`.about__group, .offer__data`,{origin: 'left'})
+sr.reveal(`.about__data, .offer__img`,{origin: 'right'})
+sr.reveal(`.features__map`,{delay: 600,origin: 'bottom'})
+sr.reveal(`.features__card-1`,{origin: 'left' ,interval:100, delay:800})
+sr.reveal(`.features__card-2`,{origin: 'right' ,interval:100, delay:900})
+sr.reveal(`.features__card-3`,{origin: 'left' ,interval:100, delay:100})
+sr.reveal(`.featured__card, logos__content, .footer__content`,{interval:100})
